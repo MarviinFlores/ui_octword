@@ -5,25 +5,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="net.octword.everest.field.MainActivity">
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Cliente"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="262dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:text="Informacion de Registro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
         <TextView_toTopOf="parent" />
 
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:layout_width="353dp"
+        android:layout_height="534dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="122dp">
 
         <TableRow
             android:padding="5dp"
@@ -33,84 +35,94 @@
         </TableRow>
 
         <TableRow
+            android:layout_width="293dp"
             android:padding="5dp"
             android:shrinkColumns="*"
             android:stretchColumns="*">
 
             <EditText
-                android:id="@+id/EditText_ContractDate"
+                android:id="@+id/EditText_Nombre"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_Apellido"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="text"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_Identificacion"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="Identificacion"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/MultiAutoC_Sexo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sexo"
+                android:textSize="14sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_DigitoVerificador"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digito Verificador"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_FechaNacimiento"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fecha de Nacimiento"
                 android:inputType="date"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:padding="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-            <Spinner
-                android:id="@+id/Spinner_DaysToPay"
-                android:layout_width="fill_parent"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/DaysToPay" />
-        </TableRow>
-
-        <TableRow
-            android:padding="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-            <EditText
-                android:id="@+id/EditText_EndDate"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:padding="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-            <EditText
-                android:id="@+id/EditText_LoanAmount"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:padding="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-            <EditText
-                android:id="@+id/EditText_ProfitPercent"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:padding="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-            <EditText
-                android:id="@+id/EditText_TotalAmountToPay"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="numberDecimal"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -121,10 +133,11 @@
             android:stretchColumns="*">
 
             <EditText
-                android:id="@+id/EditText_PaymentCycleDays"
+                android:id="@+id/EditText_TelefoFijo"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="Telefono Fijo"
                 android:inputType="number"
                 android:textSize="14sp" />
         </TableRow>
@@ -139,7 +152,8 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="numberDecimal"
+                android:hint="Telefono Celular"
+                android:inputType="number"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -149,25 +163,39 @@
             android:stretchColumns="*">
 
             <EditText
-                android:id="@+id/EditText_PenaltyFeePercent"
+                android:id="@+id/EditText_Email"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="numberDecimal"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_Pais"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Pais"
+                android:inputType="textEmailAddress"
                 android:textSize="14sp" />
         </TableRow>
     </TableLayout>
-    </ScrollView>
+
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Guardar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="666dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
