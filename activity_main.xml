@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="net.octword.everest.field.MainActivity">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Cliente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_ContractDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <Spinner
+                android:id="@+id/Spinner_DaysToPay"
+                android:layout_width="fill_parent"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/DaysToPay" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_EndDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_LoanAmount"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_ProfitPercent"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_TotalAmountToPay"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_PaymentCycleDays"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_AmountPerCycle"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <EditText
+                android:id="@+id/EditText_PenaltyFeePercent"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
