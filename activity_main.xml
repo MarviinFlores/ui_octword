@@ -10,29 +10,24 @@
         android:id="@+id/textView5"
         android:layout_width="262dp"
         android:layout_height="21dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
         android:text="Informacion de Registro"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-        <TextView_toTopOf="parent" />
 
+    <TextView_toTopOf<![CDATA[="parent" />]]>
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="362dp"
-        android:layout_height="578dp"
+        android:layout_width="294dp"
+        android:layout_height="536dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="121dp">
-
-        <TableRow
-            android:padding="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-        </TableRow>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="293dp"
@@ -44,13 +39,13 @@
                 android:id="@+id/EditText_Nombre"
                 android:layout_width="282dp"
                 android:layout_height="40dp"
+                android:background="@drawable/customize_editext"
+                android:drawableStart="@drawable/user_icon_24px"
+                android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Nombre"
-                android:drawableStart="@drawable/user_icon_24px"
                 android:inputType="text"
-                android:background="@drawable/customize_editext"
                 android:paddingStart="10dp"
-                android:drawablePadding="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -64,13 +59,13 @@
                 android:layout_width="282dp"
                 android:layout_height="40dp"
 
+                android:background="@drawable/customize_editext"
+                android:drawableStart="@drawable/user_icon_24px"
+                android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Apellido"
-                android:drawableStart="@drawable/user_icon_24px"
-                android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
-                android:drawablePadding="10dp"
                 android:inputType="text"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -83,14 +78,14 @@
                 android:id="@+id/EditText_Identificacion"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/id_icon32px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/id_icon32px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Identificacion"
-
                 android:inputType="number"
+
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -103,12 +98,12 @@
                 android:id="@+id/MultiAutoC_Sexo"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/sex_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/sex_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Sexo"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
 
 
@@ -123,13 +118,13 @@
                 android:id="@+id/EditText_DigitoVerificador"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/numeral_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/numeral_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Digito Verificador"
                 android:inputType="number"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -142,13 +137,13 @@
                 android:id="@+id/EditText_FechaNacimiento"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/calendar_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/calendar_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Fecha de Nacimiento"
                 android:inputType="date"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -162,13 +157,13 @@
                 android:id="@+id/EditText_TelefoFijo"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/call_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/call_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Telefono Fijo"
                 android:inputType="number"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -181,13 +176,13 @@
                 android:id="@+id/EditText_AmountPerCycle"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/cell_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/cell_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Telefono Celular"
                 android:inputType="number"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -200,13 +195,13 @@
                 android:id="@+id/EditText_Email"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/email_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/email_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="E-mail"
                 android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
 
@@ -219,13 +214,13 @@
                 android:id="@+id/EditText_Pais"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:drawableStart="@drawable/earth_icon_24px"
                 android:background="@drawable/customize_editext"
-                android:paddingStart="10dp"
+                android:drawableStart="@drawable/earth_icon_24px"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Pais"
                 android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
                 android:textSize="14sp" />
         </TableRow>
     </TableLayout>
@@ -237,8 +232,10 @@
         android:background="@drawable/customize_btn"
         android:text="Guardar"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="702dp" />
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="80dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
